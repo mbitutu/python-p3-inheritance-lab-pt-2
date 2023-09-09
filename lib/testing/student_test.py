@@ -16,7 +16,7 @@ class TestStudent:
         student.hello()
         sys.stdout = sys.__stdout__
         assert(captured_out.getvalue() == "Hey there! I'm so excited to learn stuff.\n")
-
+        
     def test_raises_hand(self):
         '''respectfully tries to get the teacher's attention.'''
         captured_out = io.StringIO()
